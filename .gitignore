@@ -1,3 +1,5 @@
+# Data 
+train_genetic_disorders.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
