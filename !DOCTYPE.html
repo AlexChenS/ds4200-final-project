@@ -718,31 +718,23 @@
     </div>
 
     <!-- Plot 3 -->
-    <div class="viz-block">
-      <div class="viz-header">
-        <div class="viz-type">Plot 3 &nbsp;·&nbsp; D3.js &nbsp;·&nbsp; Interactive</div>
-        <h3>Inheritance Flow to Disorder Type — Sankey Diagram</h3>
+    <div class="viz-chart" id="sankey-chart">
+      <div id="sankey" style="width:100%; height:560px;"></div>
+      <div style="display:flex; align-items:center; gap:12px; margin-top:1rem;">
+  
+    
       </div>
-      <div class="viz-chart" id="sankey-chart">
-        <span class="placeholder-text">[ Visual 3 ]</span>
-      </div>
-      <div class="interaction-note">
-        <strong>Interaction:</strong> [add in]
-      </div>
-      <div class="viz-footer">
-        <div class="takeaway">
-          <h4>Takeaway</h4>
-          <p>
-            [add in after reviewing visuals]
-          </p>
-        </div>
-        <div class="viz-tags">
-          <span class="tag tag-d3">D3.js</span>
-          <span class="tag tag-blue">Task 2</span>
-          <span class="tag tag-purple">Yuqi</span>
-        </div>
-      </div>
+      <select id="sankeyMode">
+          <option value="all">All levels</option>
+          <option value="parental">Parent level only</option>
+        </select>
     </div>
+    <div class="interaction-note">
+    <strong>Interaction:</strong> Use the dropdown to toggle between the full
+    4-layer ancestral view and a simplified 3-layer parental view. Hover any
+    flow to see exact counts. Nodes can be dragged to reposition.
+    </div>
+
 
     <!-- Plot 4 -->
     <div class="viz-block">
@@ -971,6 +963,7 @@
       });
     }
   </script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+<script src="Sankey.js"></script>
 </body>
 </html>
