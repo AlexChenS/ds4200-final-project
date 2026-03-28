@@ -1,0 +1,48 @@
+,source,target,value,origin_id,source_idx,target_idx
+0,Both Parents,Mitochondrial genetic inheritance disorders,613,Both Parents,0,4
+1,Both Parents,Multifactorial genetic inheritance disorders,216,Both Parents,0,5
+2,Both Parents,Single-gene inheritance diseases,465,Both Parents,0,6
+3,Father Only,Mitochondrial genetic inheritance disorders,445,Father Only,1,4
+4,Father Only,Multifactorial genetic inheritance disorders,81,Father Only,1,5
+5,Father Only,Single-gene inheritance diseases,307,Father Only,1,6
+6,Mother Only,Mitochondrial genetic inheritance disorders,991,Mother Only,2,4
+7,Mother Only,Multifactorial genetic inheritance disorders,183,Mother Only,2,5
+8,Mother Only,Single-gene inheritance diseases,709,Mother Only,2,6
+9,Neither Parent,Mitochondrial genetic inheritance disorders,671,Neither Parent,3,4
+10,Neither Parent,Multifactorial genetic inheritance disorders,83,Neither Parent,3,5
+11,Neither Parent,Single-gene inheritance diseases,543,Neither Parent,3,6
+0,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,73,Both Parents,4,7
+1,Mitochondrial genetic inheritance disorders,Leigh syndrome,326,Both Parents,4,8
+2,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,214,Both Parents,4,9
+3,Multifactorial genetic inheritance disorders,Alzheimer's,18,Both Parents,5,10
+4,Multifactorial genetic inheritance disorders,Diabetes,198,Both Parents,5,11
+5,Single-gene inheritance diseases,Cystic fibrosis,315,Both Parents,6,12
+6,Single-gene inheritance diseases,Hemochromatosis,32,Both Parents,6,13
+7,Single-gene inheritance diseases,Tay-Sachs,118,Both Parents,6,14
+8,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,23,Father Only,4,7
+9,Mitochondrial genetic inheritance disorders,Leigh syndrome,214,Father Only,4,8
+10,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,208,Father Only,4,9
+11,Multifactorial genetic inheritance disorders,Alzheimer's,3,Father Only,5,10
+12,Multifactorial genetic inheritance disorders,Cancer,5,Father Only,5,15
+13,Multifactorial genetic inheritance disorders,Diabetes,73,Father Only,5,11
+14,Single-gene inheritance diseases,Cystic fibrosis,141,Father Only,6,12
+15,Single-gene inheritance diseases,Hemochromatosis,52,Father Only,6,13
+16,Single-gene inheritance diseases,Tay-Sachs,114,Father Only,6,14
+17,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,61,Mother Only,4,7
+18,Mitochondrial genetic inheritance disorders,Leigh syndrome,494,Mother Only,4,8
+19,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,436,Mother Only,4,9
+20,Multifactorial genetic inheritance disorders,Alzheimer's,16,Mother Only,5,10
+21,Multifactorial genetic inheritance disorders,Cancer,2,Mother Only,5,15
+22,Multifactorial genetic inheritance disorders,Diabetes,165,Mother Only,5,11
+23,Single-gene inheritance diseases,Cystic fibrosis,338,Mother Only,6,12
+24,Single-gene inheritance diseases,Hemochromatosis,118,Mother Only,6,13
+25,Single-gene inheritance diseases,Tay-Sachs,253,Mother Only,6,14
+26,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,15,Neither Parent,4,7
+27,Mitochondrial genetic inheritance disorders,Leigh syndrome,313,Neither Parent,4,8
+28,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,343,Neither Parent,4,9
+29,Multifactorial genetic inheritance disorders,Alzheimer's,2,Neither Parent,5,10
+30,Multifactorial genetic inheritance disorders,Cancer,18,Neither Parent,5,15
+31,Multifactorial genetic inheritance disorders,Diabetes,63,Neither Parent,5,11
+32,Single-gene inheritance diseases,Cystic fibrosis,141,Neither Parent,6,12
+33,Single-gene inheritance diseases,Hemochromatosis,146,Neither Parent,6,13
+34,Single-gene inheritance diseases,Tay-Sachs,256,Neither Parent,6,14
