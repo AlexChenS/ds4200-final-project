@@ -742,9 +742,12 @@
         <div class="viz-type">Plot 4 &nbsp;·&nbsp; D3.js &nbsp;·&nbsp; Interactive</div>
         <h3>Blood Cell Count Distribution by Risk Factor Category</h3>
       </div>
-      <div class="viz-chart" id="boxplot-chart">
-        <span class="placeholder-text">[ Visual 4 ]</span>
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:1rem;">
+        <span>Blood Metrics</span>
+        <select id="boxplot-select"></select>
       </div>
+
+      <div id="boxplot-chart"></div>
       <div class="interaction-note">
         <strong>Interaction:</strong> [add in]
       <div class="viz-footer">
@@ -965,5 +968,7 @@
   </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
 <script src="Sankey.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="grped_boxplot.js"></script>
 </body>
 </html>
