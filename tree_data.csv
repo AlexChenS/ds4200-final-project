@@ -1,0 +1,128 @@
+inheritance_side,gene_source,disorder_type,disorder_subclass,count
+Both,Both,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,30
+Both,Both,Mitochondrial genetic inheritance disorders,Leigh syndrome,81
+Both,Both,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,36
+Both,Both,Multifactorial genetic inheritance disorders,Alzheimer's,13
+Both,Both,Multifactorial genetic inheritance disorders,Diabetes,69
+Both,Both,Single-gene inheritance diseases,Cystic fibrosis,105
+Both,Both,Single-gene inheritance diseases,Hemochromatosis,3
+Both,Both,Single-gene inheritance diseases,Tay-Sachs,21
+Both,Father,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,12
+Both,Father,Mitochondrial genetic inheritance disorders,Leigh syndrome,66
+Both,Father,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,51
+Both,Father,Multifactorial genetic inheritance disorders,Alzheimer's,2
+Both,Father,Multifactorial genetic inheritance disorders,Diabetes,42
+Both,Father,Single-gene inheritance diseases,Cystic fibrosis,63
+Both,Father,Single-gene inheritance diseases,Hemochromatosis,8
+Both,Father,Single-gene inheritance diseases,Tay-Sachs,28
+Both,Mother,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,25
+Both,Mother,Mitochondrial genetic inheritance disorders,Leigh syndrome,112
+Both,Mother,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,69
+Both,Mother,Multifactorial genetic inheritance disorders,Alzheimer's,2
+Both,Mother,Multifactorial genetic inheritance disorders,Diabetes,61
+Both,Mother,Single-gene inheritance diseases,Cystic fibrosis,107
+Both,Mother,Single-gene inheritance diseases,Hemochromatosis,9
+Both,Mother,Single-gene inheritance diseases,Tay-Sachs,37
+Both,Neither,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,6
+Both,Neither,Mitochondrial genetic inheritance disorders,Leigh syndrome,67
+Both,Neither,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,58
+Both,Neither,Multifactorial genetic inheritance disorders,Alzheimer's,1
+Both,Neither,Multifactorial genetic inheritance disorders,Diabetes,26
+Both,Neither,Single-gene inheritance diseases,Cystic fibrosis,40
+Both,Neither,Single-gene inheritance diseases,Hemochromatosis,12
+Both,Neither,Single-gene inheritance diseases,Tay-Sachs,32
+Maternal,Both,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,29
+Maternal,Both,Mitochondrial genetic inheritance disorders,Leigh syndrome,121
+Maternal,Both,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,73
+Maternal,Both,Multifactorial genetic inheritance disorders,Alzheimer's,10
+Maternal,Both,Multifactorial genetic inheritance disorders,Diabetes,45
+Maternal,Both,Single-gene inheritance diseases,Cystic fibrosis,122
+Maternal,Both,Single-gene inheritance diseases,Hemochromatosis,18
+Maternal,Both,Single-gene inheritance diseases,Tay-Sachs,32
+Maternal,Father,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,8
+Maternal,Father,Mitochondrial genetic inheritance disorders,Leigh syndrome,73
+Maternal,Father,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,67
+Maternal,Father,Multifactorial genetic inheritance disorders,Alzheimer's,2
+Maternal,Father,Multifactorial genetic inheritance disorders,Diabetes,19
+Maternal,Father,Single-gene inheritance diseases,Cystic fibrosis,44
+Maternal,Father,Single-gene inheritance diseases,Hemochromatosis,18
+Maternal,Father,Single-gene inheritance diseases,Tay-Sachs,39
+Maternal,Mother,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,18
+Maternal,Mother,Mitochondrial genetic inheritance disorders,Leigh syndrome,178
+Maternal,Mother,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,170
+Maternal,Mother,Multifactorial genetic inheritance disorders,Alzheimer's,3
+Maternal,Mother,Multifactorial genetic inheritance disorders,Diabetes,72
+Maternal,Mother,Single-gene inheritance diseases,Cystic fibrosis,118
+Maternal,Mother,Single-gene inheritance diseases,Hemochromatosis,39
+Maternal,Mother,Single-gene inheritance diseases,Tay-Sachs,91
+Maternal,Neither,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,6
+Maternal,Neither,Mitochondrial genetic inheritance disorders,Leigh syndrome,122
+Maternal,Neither,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,126
+Maternal,Neither,Multifactorial genetic inheritance disorders,Alzheimer's,1
+Maternal,Neither,Multifactorial genetic inheritance disorders,Cancer,2
+Maternal,Neither,Multifactorial genetic inheritance disorders,Diabetes,29
+Maternal,Neither,Single-gene inheritance diseases,Cystic fibrosis,54
+Maternal,Neither,Single-gene inheritance diseases,Hemochromatosis,43
+Maternal,Neither,Single-gene inheritance diseases,Tay-Sachs,91
+Neither,Both,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,9
+Neither,Both,Mitochondrial genetic inheritance disorders,Leigh syndrome,82
+Neither,Both,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,65
+Neither,Both,Multifactorial genetic inheritance disorders,Diabetes,25
+Neither,Both,Single-gene inheritance diseases,Cystic fibrosis,48
+Neither,Both,Single-gene inheritance diseases,Hemochromatosis,14
+Neither,Both,Single-gene inheritance diseases,Tay-Sachs,39
+Neither,Father,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,2
+Neither,Father,Mitochondrial genetic inheritance disorders,Leigh syndrome,58
+Neither,Father,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,69
+Neither,Father,Multifactorial genetic inheritance disorders,Cancer,2
+Neither,Father,Multifactorial genetic inheritance disorders,Diabetes,9
+Neither,Father,Single-gene inheritance diseases,Cystic fibrosis,27
+Neither,Father,Single-gene inheritance diseases,Hemochromatosis,33
+Neither,Father,Single-gene inheritance diseases,Tay-Sachs,64
+Neither,Mother,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,4
+Neither,Mother,Mitochondrial genetic inheritance disorders,Leigh syndrome,98
+Neither,Mother,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,94
+Neither,Mother,Multifactorial genetic inheritance disorders,Alzheimer's,2
+Neither,Mother,Multifactorial genetic inheritance disorders,Cancer,4
+Neither,Mother,Multifactorial genetic inheritance disorders,Diabetes,19
+Neither,Mother,Single-gene inheritance diseases,Cystic fibrosis,41
+Neither,Mother,Single-gene inheritance diseases,Hemochromatosis,33
+Neither,Mother,Single-gene inheritance diseases,Tay-Sachs,59
+Neither,Neither,Mitochondrial genetic inheritance disorders,Leigh syndrome,75
+Neither,Neither,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,115
+Neither,Neither,Multifactorial genetic inheritance disorders,Cancer,12
+Neither,Neither,Multifactorial genetic inheritance disorders,Diabetes,10
+Neither,Neither,Single-gene inheritance diseases,Cystic fibrosis,25
+Neither,Neither,Single-gene inheritance diseases,Hemochromatosis,66
+Neither,Neither,Single-gene inheritance diseases,Tay-Sachs,94
+Paternal,Both,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,11
+Paternal,Both,Mitochondrial genetic inheritance disorders,Leigh syndrome,52
+Paternal,Both,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,40
+Paternal,Both,Multifactorial genetic inheritance disorders,Alzheimer's,2
+Paternal,Both,Multifactorial genetic inheritance disorders,Diabetes,29
+Paternal,Both,Single-gene inheritance diseases,Cystic fibrosis,50
+Paternal,Both,Single-gene inheritance diseases,Hemochromatosis,9
+Paternal,Both,Single-gene inheritance diseases,Tay-Sachs,15
+Paternal,Father,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,5
+Paternal,Father,Mitochondrial genetic inheritance disorders,Leigh syndrome,51
+Paternal,Father,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,57
+Paternal,Father,Multifactorial genetic inheritance disorders,Diabetes,16
+Paternal,Father,Single-gene inheritance diseases,Cystic fibrosis,38
+Paternal,Father,Single-gene inheritance diseases,Hemochromatosis,10
+Paternal,Father,Single-gene inheritance diseases,Tay-Sachs,26
+Paternal,Mother,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,6
+Paternal,Mother,Mitochondrial genetic inheritance disorders,Leigh syndrome,62
+Paternal,Mother,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,59
+Paternal,Mother,Multifactorial genetic inheritance disorders,Alzheimer's,1
+Paternal,Mother,Multifactorial genetic inheritance disorders,Diabetes,19
+Paternal,Mother,Single-gene inheritance diseases,Cystic fibrosis,30
+Paternal,Mother,Single-gene inheritance diseases,Hemochromatosis,8
+Paternal,Mother,Single-gene inheritance diseases,Tay-Sachs,36
+Paternal,Neither,Mitochondrial genetic inheritance disorders,Leber's hereditary optic neuropathy,1
+Paternal,Neither,Mitochondrial genetic inheritance disorders,Leigh syndrome,49
+Paternal,Neither,Mitochondrial genetic inheritance disorders,Mitochondrial myopathy,52
+Paternal,Neither,Multifactorial genetic inheritance disorders,Cancer,5
+Paternal,Neither,Multifactorial genetic inheritance disorders,Diabetes,9
+Paternal,Neither,Single-gene inheritance diseases,Cystic fibrosis,23
+Paternal,Neither,Single-gene inheritance diseases,Hemochromatosis,25
+Paternal,Neither,Single-gene inheritance diseases,Tay-Sachs,37
