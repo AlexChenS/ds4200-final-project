@@ -8,6 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 
+  <!-- Vega/Vega-Lite/Vega-Embed for Altair visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
   <style>
     /* ── Reset & base ── */
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -264,13 +269,11 @@
     }
 
     .viz-chart {
-      padding: 48px 24px;
-      background-color: #f4f4f4;
+      padding: 12px;
+      background-color: #ffffff;
       border-bottom: 1px solid #e0e0e0;
       min-height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow-x: auto;
     }
 
     .viz-chart .placeholder-text {
@@ -665,31 +668,52 @@
     </p>
 
     <!-- Plot 1 -->
-    <div class="viz-block">
-      <div class="viz-header">
-        <div class="viz-type">Plot 1 &nbsp;·&nbsp; Altair &nbsp;·&nbsp; Static + Interactive</div>
-        <h3>Blood Cell Count vs. White Blood Cell Count by Disorder Type</h3>
+  <div class="viz-block">
+    <div class="viz-header">
+      <div class="viz-type">Plot 1 &nbsp;·&nbsp; Altair &nbsp;·&nbsp; Static + Interactive</div>
+      <h3>Blood Cell Count vs. White Blood Cell Count by Disorder Type</h3>
+    </div>
+    <div class="viz-chart" style="padding: 20px; background-color: #ffffff; overflow: visible;">
+    <div id="vis1" style="width: 85%; max-width: 900px; margin: 0; padding: 0; transform: scale(0.85); transform-origin: top left;"></div>
+    </div>
+    <div class="interaction-note">
+      <strong>Interaction:</strong> Drag on the scatter plot to select a region of interest. All four charts below update 
+  automatically to show the composition of your selection. The top two bar charts reveal the distribution of test results and 
+  clusters in the selected area, while the bottom two charts break down cluster membership by test result and gender. 
+  This linked interaction enables exploration of relationships between blood cell measurements, cluster assignments, test 
+  outcomes, and demographic patterns.
+    </div>
+    <div class="viz-footer">
+      <div class="takeaway">
+        <h4>Takeaway</h4>
+        <p>
+      <p>
+        K-Means clustering reveals four distinct biomarker patterns in the blood cell data. 
+        Clusters 3 and 4 (upper region) show elevated white blood cell counts (~9-10 thousand/μL), while 
+        Clusters 1 and 2 (lower region) exhibit lower counts (~5-6 thousand/μL). However, test results 
+        (abnormal, normal, slightly abnormal, inconclusive) are distributed relatively 
+        evenly across all clusters, suggesting that these blood cell measurements alone may not be 
+        sufficient diagnostic indicators for distinguishing disorder types. The cluster composition 
+        charts show similar proportions of all test results in each cluster, indicating that additional 
+        biomarkers beyond blood and white blood cell counts would be needed for accurate disorder classification.
+        
+        <strong>New to clustering?</strong> Learn more about 
+        <a href="https://www.geeksforgeeks.org/machine-learning/k-means-clustering-introduction/" target="_blank" style="color: #4f7cff;">how K-means clustering works</a> 
+        or read about <a href="https://en.wikipedia.org/wiki/White_blood_cell_differential" target="_blank" style="color: #4f7cff;">interpreting white blood cell counts</a>.
+        
+        This addresses Task 1 by revealing that while natural groupings exist in the biomarker space, they do not 
+        correspond strongly to disorder outcomes.
+      </p>
+        </p>
       </div>
-      <div class="viz-chart">
-        <span class="placeholder-text">[ Visual 1 ]</span>
-      </div>
-      <div class="interaction-note">
-        <strong>Interaction:</strong> [add in]
-      </div>
-      <div class="viz-footer">
-        <div class="takeaway">
-          <h4>Takeaway</h4>
-          <p>
-            [add in after reviewing visuals]
-          </p>
-        </div>
-        <div class="viz-tags">
-          <span class="tag tag-altair">Altair</span>
-          <span class="tag tag-blue">Task 1</span>
-          <span class="tag tag-green">Dalia</span>
-        </div>
+      <div class="viz-tags">
+        <span class="tag tag-altair">Altair</span>
+        <span class="tag tag-blue">Task 1</span>
+        <span class="tag tag-green">Dalia</span>
       </div>
     </div>
+  </div>
+
 
     <!-- Plot 2 -->
     <div class="viz-block">
@@ -697,17 +721,29 @@
         <div class="viz-type">Plot 2 &nbsp;·&nbsp; Altair &nbsp;·&nbsp; Static + Interactive</div>
         <h3>Disorder Count by Gender and Inheritance Source</h3>
       </div>
-      <div class="viz-chart">
-        <span class="placeholder-text">[ Visual 2 ]</span>
+      <div class="viz-chart" style="padding: 24px; background-color: #ffffff; border-bottom: 1px solid #e0e0e0; min-height: 900px;">
+        <div id="vis2" style="width:100%; height:100%;"></div>
       </div>
       <div class="interaction-note">
-        <strong>Interaction:</strong> [add in]
+        <strong>Interaction:</strong> Click any test result bar in the top gender panels to highlight that result across 
+all views. The bottom inheritance panels automatically filter to show only the selected test result, revealing how inheritance patterns (Both, Maternal, Paternal, Neither)  distribute for that specific outcome. The linked highlighting enables comparison of gender and inheritance patterns for each test result category. Click on empty space 
+to reset the filter and view all data.
       </div>
       <div class="viz-footer">
         <div class="takeaway">
           <h4>Takeaway</h4>
           <p>
-            [add in after reviewing visuals]
+            The analysis reveals relatively balanced distributions of test results across both 
+gender and inheritance patterns. All three gender groups (Male, Female, Ambiguous) 
+show similar proportions of abnormal, normal, slightly abnormal, and inconclusive 
+results, with each test result category containing 300-380 patients per gender. 
+Similarly, inheritance patterns (Both, Maternal, Paternal, Neither) do not show 
+strong associations with specific test outcomes—all four inheritance sources exhibit comparable 
+distributions across test result categories. The "Neither" category (no inheritance from either parent) 
+is the most common pattern, followed by "Maternal," "Paternal," and "Both." These findings suggest that gender 
+and inheritance source alone are not strong predictors of disorder outcomes in this dataset. This addresses Task 
+2 by revealing that while inheritance patterns vary, they do not correspond to distinct disorder profiles based 
+on the available test results.
           </p>
         </div>
         <div class="viz-tags">
@@ -816,12 +852,13 @@
           <span class="tag tag-purple">Yuqi</span>
         </div>
       </div>
+    </div>
 
   </section>
 
   <hr>
 
-  <!-- Summary -->
+<!-- Summary -->
   <section id="summary">
     <p class="section-label">Summary</p>
     <h2>Findings &amp; Future Work</h2>
@@ -832,21 +869,41 @@
     <div class="summary-grid">
       <div class="summary-card">
         <h3>🔍 &nbsp; Key Findings</h3>
-        <p>
-          [add in after reviewing visuals]
+        
+        <p><strong>Task 1: Clinical Measurements vs. Disorder Type</strong><br>
+          K-means clustering identified four biomarker patterns. Clusters 3–4 showed high WBC counts (~9-10k/μL), Clusters 1–2 showed low counts (~5-6k/μL). Test results distributed evenly across clusters, indicating blood measurements alone cannot distinguish disorder types.
         </p>
-        <p>
-          [add in after reviewing visuals]
+        
+        <p><strong>Task 2: Inheritance Patterns &amp; Outcomes</strong><br>
+          Gender and inheritance patterns showed no strong association with test outcomes. All groups exhibited similar distributions, suggesting these factors alone don't predict disorder outcomes.
+        </p>
+        
+        <p><strong>Task 3: Demographic &amp; Environmental Risk</strong><br>
+          Blood counts showed no distinct patterns after controlling for maternal illness, radiation, and substance abuse, suggesting minimal impact or confounding variables.
+        </p>
+        
+        <p><strong>Additional Insights</strong><br>
+          Mitochondrial disorders more frequently show maternal history; Single Gene disorders show more patients without parental history. Disorders don't follow straightforward inheritance paths.
         </p>
       </div>
 
       <div class="summary-card">
         <h3>🔭 &nbsp; Limitations &amp; Future Work</h3>
-        <p>
-          [add in after reviewing visuals]
+        
+        <p><strong>Limitations</strong><br>
+          <em>Data:</em> Dataset reduced from 22K to 5K records after removing missing values. Anonymized features limit interpretation. Cross-sectional data prevents temporal analysis.
+          <br><br>
+          <em>Methods:</em> K-means assumes spherical clusters. Only two biomarkers used. Associations don't establish causation; unknown confounders may influence results.
+          <br><br>
+          <em>Generalizability:</em> Kaggle dataset may not represent clinical populations. Findings require real-world validation.
         </p>
-        <p>
-          [add in after reviewing visuals]
+        
+        <p><strong>Future Work</strong><br>
+          • Incorporate symptom severity into clustering analysis<br>
+          • Apply advanced clustering (hierarchical, DBSCAN) for non-spherical patterns<br>
+          • Build predictive models (Random Forest, XGBoost) for disorder classification<br>
+          • Add temporal analysis if longitudinal data available<br>
+          • Integrate genetic mutation data to map mutations to biomarker clusters
         </p>
       </div>
     </div>
@@ -991,10 +1048,35 @@
       });
     }
   </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
-<script src="Sankey.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
-<script src="grped_boxplot.js"></script>
-<script src="tree_diagram.js"></script>
+
+  <!-- Load Altair Visualizations -->
+  <script type="text/javascript">
+    // Load Visualization 1 - Scatter Plot with Clustering
+    vegaEmbed('#vis1', 'integrated_exploration.json', {
+      actions: {
+        export: true,
+        source: false,
+        compiled: false,
+        editor: false
+      }
+    }).catch(console.error);
+
+    // Load Visualization 2 - Interactive Bar Charts
+    vegaEmbed('#vis2', 'bar_fully_interactive2.json', {
+      actions: {
+        export: true,
+        source: false,
+        compiled: false,
+        editor: false
+      }
+    }).catch(console.error);
+  </script>
+
+  <!-- Other visualizations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+  <script src="Sankey.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+  <script src="grped_boxplot.js"></script>
+  <script src="tree_diagram.js"></script>
 </body>
 </html>
