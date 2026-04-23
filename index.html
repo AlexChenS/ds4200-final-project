@@ -698,81 +698,77 @@
     </div>
 
 
-
-    <!-- Plot 2 -->
-  <div class="viz-block">
-    <div class="viz-header">
-      <div class="viz-type">Plot 2 &nbsp;·&nbsp; Altair &nbsp;·&nbsp; Static + Interactive</div>
-      <h3>Blood Cell Count vs. White Blood Cell Count by Disorder Type - Scatter Plot</h3>
-    </div>
-    <div class="viz-chart" style="padding: 20px; background-color: #ffffff; overflow: visible;">
-      <div class="viz-chart" style="padding: 20px; background-color: #ffffff; min-height: 900px;">
-        <div id="vis1" style="width: 85%; max-width: 900px; margin: 0 0 -200px 0; transform: scale(0.85); transform-origin: top left;"></div>
-    </div>
-
-
-    <div id="vis1" style="width: 85%; max-width: 900px; margin: 0; padding: 0; transform: scale(0.85); transform-origin: top left;"></div>
-    </div>
-    <div class="interaction-note">
-      <strong>Interaction:</strong> Drag on the scatter plot to select a region of interest. All four charts below update 
-  automatically to show the composition of your selection. The top two bar charts reveal the distribution of test results and 
-  clusters in the selected area, while the bottom two charts break down cluster membership by test result and gender. 
-  This linked interaction enables exploration of relationships between blood cell measurements, cluster assignments, test 
-  outcomes, and demographic patterns.
-    </div>
-    <div class="viz-footer">
-      <div class="takeaway">
-        <h4>Takeaway</h4>
-        <p>
+<!-- Plot 2 -->
+<div class="viz-block">
+  <div class="viz-header">
+    <div class="viz-type">Plot 2 &nbsp;·&nbsp; Altair &nbsp;·&nbsp; Static + Interactive</div>
+    <h3>Blood Cell Count vs. White Blood Cell Count by Disorder Type - Scatter Plot</h3>
+  </div>
+  <div class="viz-chart" style="padding: 20px; background-color: #ffffff; min-height: 900px;">
+    <div id="vis1" style="width: 85%; max-width: 900px; margin: 0 0 -200px 0; transform: scale(0.85); transform-origin: top left;"></div>
+  </div>
+  
+  <div class="interaction-note">
+    <strong>Interaction:</strong> Drag on the scatter plot to select a region of interest. All four charts below update 
+automatically to show the composition of your selection. The top two bar charts reveal the distribution of test results and 
+clusters in the selected area, while the bottom two charts break down cluster membership by test result and gender. 
+This linked interaction enables exploration of relationships between blood cell measurements, cluster assignments, test 
+outcomes, and demographic patterns.
+  </div>
+  
+  <div class="viz-footer">
+    <div class="takeaway">
+      <h4>Takeaway</h4>
       <p>
         K-Means clustering reveals four distinct biomarker patterns in the blood cell data. 
-        Clusters 3 and 4 (upper region) show elevated white blood cell counts (~9-10 thousand/μL), while 
-        Clusters 1 and 2 (lower region) exhibit lower counts (~5-6 thousand/μL). However, test results 
-        (abnormal, normal, slightly abnormal, inconclusive) are distributed relatively 
+        Clusters 1 and 2 (upper region) show elevated white blood cell counts (~9-10 thousand/μL), while 
+        Clusters 3 and 4 (lower region) exhibit lower counts (~5-6 thousand/μL). However, test results 
+        (abnormal, slightly abnormal, inconclusive, normal) are distributed relatively 
         evenly across all clusters, suggesting that these blood cell measurements alone may not be 
         sufficient diagnostic indicators for distinguishing disorder types. The cluster composition 
         charts show similar proportions of all test results in each cluster, indicating that additional 
         biomarkers beyond blood and white blood cell counts would be needed for accurate disorder classification.
-        
+        <br><br>
         <strong>New to clustering?</strong> Learn more about 
         <a href="https://www.geeksforgeeks.org/machine-learning/k-means-clustering-introduction/" target="_blank" style="color: #4f7cff;">how K-means clustering works</a> 
         or read about <a href="https://en.wikipedia.org/wiki/White_blood_cell_differential" target="_blank" style="color: #4f7cff;">interpreting white blood cell counts</a>.
-        
+        <br><br>
         This addresses Task 1 by revealing that while natural groupings exist in the biomarker space, they do not 
         correspond strongly to disorder outcomes.
       </p>
-        </p>
-      </div>
-      <div class="viz-tags">
-        <span class="tag tag-altair">Altair</span>
-        <span class="tag tag-blue">Task 1</span>
-        <span class="tag tag-green">Dalia</span>
-      </div>
+    </div>
+    <div class="viz-tags">
+      <span class="tag tag-altair">Altair</span>
+      <span class="tag tag-blue">Task 1</span>
+      <span class="tag tag-green">Dalia</span>
     </div>
   </div>
+</div>
 
-
-    <!-- Plot 3 -->
-    <div class="viz-block">
-      <div class="viz-header">
-        <div class="viz-type">Plot 3 &nbsp;·&nbsp; Altair &nbsp;·&nbsp; Static + Interactive</div>
-        <h3>Disorder Count by Gender and Inheritance Source - Grouped Bar Chart</h3>
-      </div>
-      <div class="viz-chart" style="padding: 24px; background-color: #ffffff; border-bottom: 1px solid #e0e0e0; min-height: 900px;">
-        <div id="vis2" style="width:100%; height:100%;"></div>
-      </div>
-      <div class="interaction-note">
-        <strong>Interaction:</strong> Click any test result bar in the top gender panels to highlight that result across 
-all views. The bottom inheritance panels automatically filter to show only the selected test result, revealing how inheritance patterns (Both, Maternal, Paternal, Neither)  distribute for that specific outcome. The linked highlighting enables comparison of gender and inheritance patterns for each test result category. Click on empty space 
+<!-- Plot 3 -->
+<div class="viz-block">
+  <div class="viz-header">
+    <div class="viz-type">Plot 3 &nbsp;·&nbsp; Altair &nbsp;·&nbsp; Static + Interactive</div>
+    <h3>Disorder Count by Gender and Inheritance Source - Grouped Bar Chart</h3>
+  </div>
+  
+  <div class="viz-chart" style="padding: 24px; background-color: #ffffff; border-bottom: 1px solid #e0e0e0; min-height: 900px;">
+    <div id="vis2" style="width:100%; height:100%;"></div>
+  </div>
+  
+  <div class="interaction-note">
+    <strong>Interaction:</strong> Click any test result bar in the top gender panels to highlight that result across 
+all views. The bottom inheritance panels automatically filter to show only the selected test result, revealing how inheritance patterns (Both, Maternal, Paternal, Neither) distribute for that specific outcome. The linked highlighting enables comparison of gender and inheritance patterns for each test result category. Click on empty space 
 to reset the filter and view all data.
-      </div>
-      <div class="viz-footer">
-        <div class="takeaway">
-          <h4>Takeaway</h4>
-          <p>
-            The analysis reveals relatively balanced distributions of test results across both 
+  </div>
+  
+  <div class="viz-footer">
+    <div class="takeaway">
+      <h4>Takeaway</h4>
+      <p>
+        The analysis reveals relatively balanced distributions of test results across both 
 gender and inheritance patterns. All three gender groups (Male, Female, Ambiguous) 
-show similar proportions of abnormal, normal, slightly abnormal, and inconclusive 
+show similar proportions of abnormal, slightly abnormal, inconclusive, and normal 
 results, with each test result category containing 300-380 patients per gender. 
 Similarly, inheritance patterns (Both, Maternal, Paternal, Neither) do not show 
 strong associations with specific test outcomes—all four inheritance sources exhibit comparable 
@@ -781,16 +777,15 @@ is the most common pattern, followed by "Maternal," "Paternal," and "Both." Thes
 and inheritance source alone are not strong predictors of disorder outcomes in this dataset. This addresses Task 
 2 by revealing that while inheritance patterns vary, they do not correspond to distinct disorder profiles based 
 on the available test results.
-          </p>
-        </div>
-        <div class="viz-tags">
-          <span class="tag tag-altair">Altair</span>
-          <span class="tag tag-blue">Task 2</span>
-          <span class="tag tag-green">Dalia</span>
-        </div>
-      </div>
+      </p>
     </div>
-
+    <div class="viz-tags">
+      <span class="tag tag-altair">Altair</span>
+      <span class="tag tag-blue">Task 2</span>
+      <span class="tag tag-green">Dalia</span>
+    </div>
+  </div>
+</div>
     <!-- Plot 4 -->
     <div class="viz-block">
       <div class="viz-header">
